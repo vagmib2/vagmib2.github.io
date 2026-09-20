@@ -13,17 +13,16 @@
 .tarifs{background:#0d1a33;border-radius:14px;padding:14px;margin:12px auto;max-width:800px;font-size:11px;line-height:1.9;border:1px solid #1a2f5a}
 .grid{max-width:800px;margin:0 auto;padding:12px;display:grid;gap:14px}
 .card{background:#0d1a33;border:2px solid #1a2f5a;border-radius:16px;overflow:hidden;cursor:pointer}
-.card:hover{border-color:#00a8ff;box-shadow:0 0 20px rgba(0,168,255,.3)}
-.head{padding:11px 12px;display:flex;justify-content:space-between;background:#08162f;font-weight:900;font-size:11px;align-items:center}
+.head{padding:11px 12px;display:flex;justify-content:space-between;background:#08162f;font-weight:900;font-size:11px}
 .pr{padding:5px 10px;border-radius:999px;font-weight:900;font-size:11px}
 .photo{width:100%;height:280px;object-fit:cover;background:#000;display:block}
-.click-hint{background:#00a8ff;color:#000;text-align:center;padding:8px;font-weight:900;font-size:11px}
+.click-hint{background:#00a8ff;color:#000;text-align:center;padding:10px;font-weight:900;font-size:12px}
 .tbl{width:100%;border-collapse:collapse;background:#08162f;font-size:11px}.tbl td{padding:9px 10px;border-bottom:1px solid #1a2f5a}.tbl td:first-child{color:#8aa0c0;width:130px;font-size:9px;font-weight:700}
 .btn{display:block;background:#25D366;color:#000;text-align:center;padding:14px;border-radius:12px;font-weight:900;text-decoration:none;margin:12px;font-size:13px}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:9999;padding:10px}
 .modal.open{display:flex}
 .modal-box{background:#0d1a33;border:3px solid #00a8ff;border-radius:20px;max-width:680px;width:100%;max-height:95vh;overflow-y:auto;position:relative}
-.close{position:absolute;top:10px;right:10px;background:#ff1a1a;color:#fff;border:0;padding:8px 14px;border-radius:999px;font-weight:900;z-index:10;cursor:pointer}
+.close{position:absolute;top:10px;right:10px;background:#ff1a1a;color:#fff;border:0;padding:8px 14px;border-radius:999px;font-weight:900;z-index:10}
 </style>
 <body>
 
@@ -47,158 +46,29 @@ Pour les autres versions, une intervention sur place à Montpellier est nécessa
 
 <div class="tarifs">
 <b style="color:#00a8ff">TARIFS ACTUELS :</b><br>
-- <b>MH2P_ER_AU_P2711 Sans fil Sans matériel Q3 Q8 A6 C8 A1 GB A7 4K Touareg PCM5 → À partir de 190€</b> [À distance]<br>
-- <b>Seat Full Link Ibiza Leon Ateca Arona Tarraco → 70€</b> [MST2_EU_SE_ZR_PxxxT - Sur place - Texte intégral]<br>
-- <b>MHI2/MHI2Q A3 A4 A5 A6 A7 Q2 Q5 Q7 TT R8 → À partir de 70€</b> [Sur place 30-45min]<br>
-- <b>Porsche PCM4.0 POG11 + Touareg Full Screen → 130€</b> [À distance]
+- <b>MH2P_ER_AU_P2711 Sans fil Sans matériel → 190€</b> [À distance]<br>
+- <b>Seat Full Link → 70€</b> [MST2_EU_SE_ZR_PxxxT - Sur place - Texte intégral]<br>
+- <b>MHI2/MHI2Q → 70€</b> [Sur place 30-45min]<br>
+- <b>Porsche POG11 + Touareg Full Screen → 130€</b> [À distance]
 </div>
 
 <div class="grid">
-
-<div class="card" onclick="openP2711()">
-<div class="head"><span>MH2P_ER_AU_P2711 SANS FIL SANS MATÉRIEL</span><span class="pr" style="background:#00ff88">190€ À DISTANCE</span></div>
-<img class="photo" src="IMG-20260920-WA5345.jpg">
-<div class="click-hint">👆 CLIQUEZ ICI POUR DÉTAILS COMPLETS</div>
+<div class="card" onclick="openP2711()"><div class="head"><span>MH2P_ER_AU_P2711 SANS FIL</span><span class="pr" style="background:#00ff88">190€ À DISTANCE</span></div><img class="photo" src="IMG-20260920-WA5345.jpg"><div class="click-hint">👆 CLIQUEZ ICI POUR DÉTAILS</div></div>
+<div class="card" onclick="openPorsche()"><div class="head"><span>PORSCHE POG11 + TOUAREG FULL</span><span class="pr" style="background:#00ff88">130€ À DISTANCE</span></div><img class="photo" src="IMG-20260920-WA7507.jpg"><div class="click-hint">👆 CLIQUEZ ICI</div></div>
+<div class="card" onclick="openVW()"><div class="head"><span>VW MST2_EU_VW_PxxxD</span><span class="pr" style="background:#00ff88">70€ À DISTANCE</span></div><img class="photo" src="IMG-20260920-WA7942.jpg"><div class="click-hint">👆 CLIQUEZ ICI - VW 15MIN</div></div>
+<div class="card" onclick="openSeat()"><div class="head"><span>SEAT FULL LINK IBIZA LEON ATECA</span><span class="pr" style="background:#ffa500">70€ SUR PLACE</span></div><img class="photo" src="IMG-20260920-WA8298.jpg"><div class="click-hint" style="background:#ffa500">👆 CLIQUEZ ICI - TEXTE INTÉGRAL LONG</div></div>
+<div class="card" onclick="openSkoda()"><div class="head"><span>SKODA xxxT + MHI2/MHI2Q</span><span class="pr" style="background:#ffa500">70€ SUR PLACE</span></div><img class="photo" src="IMG-20260920-WA9460.jpg"><div class="click-hint" style="background:#ffa500">👆 CLIQUEZ ICI</div></div>
 </div>
 
-<div class="card" onclick="openPorsche()">
-<div class="head"><span>PORSCHE PCM4.0 POG11 + TOUAREG FULL SCREEN</span><span class="pr" style="background:#00ff88">130€ À DISTANCE</span></div>
-<img class="photo" src="IMG-20260920-WA7507.jpg">
-<div class="click-hint">👆 CLIQUEZ ICI - FULL SCREEN</div>
-</div>
-
-<div class="card" onclick="openVW()">
-<div class="head"><span>VW MST2_EU_VW_PxxxD GOLF POLO PASSAT</span><span class="pr" style="background:#00ff88">70€ À DISTANCE</span></div>
-<img class="photo" src="IMG-20260920-WA7942.jpg">
-<div class="click-hint">👆 CLIQUEZ ICI - VW À DISTANCE 15MIN</div>
-</div>
-
-<div class="card" onclick="openSeat()">
-<div class="head"><span>SEAT FULL LINK - IBIZA LEON ATECA ARONA TARRACO</span><span class="pr" style="background:#ffa500">70€ SUR PLACE</span></div>
-<img class="photo" src="IMG-20260920-WA8298.jpg">
-<div class="click-hint" style="background:#ffa500">👆 CLIQUEZ ICI - SEAT FULL LINK TEXTE INTÉGRAL</div>
-</div>
-
-<div class="card" onclick="openSkoda()">
-<div class="head"><span>SKODA xxxT + MHI2/MHI2Q</span><span class="pr" style="background:#ffa500">70€ SUR PLACE</span></div>
-<img class="photo" src="IMG-20260920-WA9460.jpg">
-<div class="click-hint" style="background:#ffa500">👆 CLIQUEZ ICI - SUR PLACE MONTPELLIER</div>
-</div>
-
-</div>
-
-<div id="modal" class="modal" onclick="closeModal(event)"><div class="modal-box" id="box"></div></div>
+<div id="modal" class="modal"><div class="modal-box" id="box"></div></div>
 
 <script>
-function openP2711(){
-document.getElementById('box').innerHTML=`
-<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button>
-<img src="IMG-20260920-WA5345.jpg" style="width:100%;height:280px;object-fit:cover">
-<div style="padding:16px">
-<h3 style="color:#00ff88;margin:10px 0">MH2P_ER_AU_P2711 Sans fil Sans matériel - 190€ À DISTANCE</h3>
-<div style="background:#0a1a12;border:1px solid #00ff88;border-radius:12px;padding:12px;font-size:11px;line-height:1.6;margin-bottom:10px">
-<b>• Informations sur la version MH2p_ER_AU_P2711</b><br><br>
-✅ Activation de CarPlay sans fil<br>
-✅ Activation de CarPlay et Android<br>
-✅ Activation Apple CarPlay et Android Auto pour Porsche MH2p - PCM5<br><br>
-<b>Aucun matériel supplémentaire n'est requis.</b><br><br>
-Compatible avec tous les modèles Audi A1 GB, A6 C8, A7 4K, A8 et Q3 (2019-2021) ; l'activation native de CarPlay sans fil est possible.<br><br>
-Cette fonctionnalité est compatible uniquement avec les véhicules équipés d’un autoradio MH2P_ER_AU_P... ainsi que les Porsche dotées d’un système autoradio PMC5, les Audi Q3, Q8, A6 C8, A1 GB et A7 4K, et les Volkswagen Touareg.<br><br>
-L’activation du CarPlay sans fil est possible sur les modèles mentionnés ci-dessus Audi à partir 2019 Porsche, Touareg. (Q3, Q8, A6 C8, A1 GB, A7 4K).<br>
-Veuillez consulter attentivement la description complète du produit.
-</div>
-<table class="tbl">
-<tr><td>Modèles</td><td>Q3 Q8 A6 C8 A1 GB A7 4K Touareg PCM5 - MH2P_ER_AU_P2711 + toutes versions P...</td></tr>
-<tr><td>Version</td><td>MH2P_ER_AU_P2711 - Toutes versions MH2P_ER_AU_PXXX - ✅ À DISTANCE</td></tr>
-<tr><td>Active</td><td>CarPlay SANS FIL natif + Android Auto sans fil - Sans boitier</td></tr>
-<tr><td>Procédure</td><td>À DISTANCE - PC Windows + Carte SD + TeamViewer - 25-30min</td></tr>
-</table>
-<a class="btn" href="https://wa.me/33666085584?text=MH2P_P2711_190_sans_fil">📲 WHATSAPP MH2P 190€ SANS FIL</a>
-</div>`;
-document.getElementById('modal').classList.add('open');
-}
-function openPorsche(){
-document.getElementById('box').innerHTML=`
-<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button>
-<img src="IMG-20260920-WA7507.jpg" style="width:100%;height:280px;object-fit:cover">
-<div style="padding:16px">
-<h3 style="color:#00ff88;margin:10px 0">Porsche PCM4.0 POG11 + Touareg Full Screen → 130€ À DISTANCE</h3>
-<div style="background:#0a1a12;border:1px solid #00ff88;border-radius:12px;padding:12px;font-size:11px;margin-bottom:10px">
-<b>Activation Apple CarPlay et AndroidAuto en plein écran Volkswagen Touareg</b><br><br>
-<b>Compatibilité</b> : Vous nous faîtes parvenir les détails de votre voiture ainsi que la version du logiciel afin de vérifier et ainsi confirmer la compatibilité.<br><br>
-<b>À distance :</b> Ordinateur portable Windows + Carte SD - Nous effectuons le codage via TeamViewer.<br><br>
-Full Screen 10 icônes - Suppression bandes noires
-</div>
-<table class="tbl">
-<tr><td>Modèles</td><td>Panamera 971 / Cayenne 9YA / Macan / Touareg CR / Bentayga</td></tr>
-<tr><td>Version</td><td>TOUTES POG11_EU_Pxxxx - ✅ À DISTANCE</td></tr>
-<tr><td>Active</td><td>Full Screen CarPlay 10 icônes + Android Auto Full</td></tr>
-<tr><td>Procédure</td><td>À DISTANCE PC+SD 40-45min</td></tr>
-</table>
-<a class="btn" href="https://wa.me/33666085584?text=Porsche_POG11_Touareg_130">📲 WHATSAPP PORSCHE 130€</a>
-</div>`;
-document.getElementById('modal').classList.add('open');
-}
-function openVW(){
-document.getElementById('box').innerHTML=`
-<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button>
-<div style="padding:16px">
-<h3 style="color:#00ff88">VW MST2_EU_VW_PxxxD 70€ À DISTANCE</h3>
-<div style="background:#08162f;border:2px solid #00a8ff;border-radius:12px;padding:12px;font-size:11px;margin:10px 0;text-align:center">
-L'activation à distance est disponible pour tous les modèles dont le micrologiciel débute par MST2_EU_VW_PxxxD ou MH2P_ER_AU_PXXX.
-</div>
-<table class="tbl"><tr><td>Modèles</td><td>Golf 7 / Tiguan 2 / Passat B8 / Polo 6 / T-Roc</td></tr><tr><td>Version</td><td>TOUTES MST2_EU_VW_PxxxD - ✅ À DISTANCE 15min</td></tr></table>
-<a class="btn" href="https://wa.me/33666085584?text=VW_PxxxD_70">📲 WHATSAPP VW 70€</a>
-</div>`;
-document.getElementById('modal').classList.add('open');
-}
-function openSeat(){
-document.getElementById('box').innerHTML=`
-<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button>
-<img src="IMG-20260920-WA8298.jpg" style="width:100%;height:320px;object-fit:cover">
-<div style="padding:18px">
-<h3 style="color:#ffa500;margin:10px 0">FULL LINK pour Seat (Apple CarPlay / Android Auto) - Activation Apple CarPlay | Seat MST2 Delphi - 70€</h3>
-
-<div style="background:#0a1a12;border:2px solid #ffa500;border-radius:14px;padding:16px;font-size:11px;line-height:1.8;margin-bottom:14px">
-<b style="color:#ffa500;font-size:12px">FULL LINK pour Seat (Apple CarPlay / Android Auto)</b><br><br>
-Activation de l’application Full Link Seat<br>
-Activation de Apple CarPlay filaire<br>
-Activation de Android Auto filaire<br>
-Activation des Commandes vocales<br>
-Activation du Moniteur de performances<br><br>
-
-<b>Informations à nous communiquer :</b><br><br>
-Référence de votre autoradio commençant par MST2_EU_SE_XX_XXXXXX (Maintenez le bouton MENU pendant 3 secondes pour obtenir la référence de votre autoradio)<br>
-Pour toutes les versions, ce service est compatible uniquement si vous disposez de 2 emplacements pour cartes SD (avec navigation).<br>
-Avant de passer commande, merci de vérifier si votre référence est présente dans notre tableau de compatibilité.<br><br>
-
-<b>Prérequis :</b><br>
-Vous aurez besoin d'une carte SD (Si vous n'avez pas de carte SD, vous pouvez vous en procurer une dans notre boutique : lien)<br><br>
-
-<b>Procédure d'installation/d'activation :</b><br><br>
-Téléchargez, et décompressez le fichier ZIP<br>
-Copiez les fichiers sur votre carte SD (à la racine)<br>
-Insérez la carte SD dans votre voiture<br>
-Mettez le contact du véhicule et démarrez le moteur<br>
-Maintenez le bouton MENU pendant 3 secondes<br>
-Cliquez sur "Mise à jour du logiciel / versions"<br>
-Cliquez sur "Mise à jour"<br>
-Choisissez la source : "Carte SD"<br>
-Sélectionnez la version de la mise à jour détectée<br>
-Cliquez sur "Démarrer" puis "Continuer"<br>
-Attendez que l'installation se termine (2-3 minutes)<br>
-Un message s'affiche, cliquez sur "Annuler" ou "Retour"<br>
-L'autoradio redémarre<br>
-Retirez la carte SD<br>
-Redémarrez l’autoradio en restant appuyer sur le bouton "ON" pendant 60 secondes<br>
-<b style="color:#00ff88">Activation effectuée avec succès !</b><br><br>
-
-<b>Avertissement :</b><br>
-N'utilisez pas la carte SD dédiée à la navigation.<br>
-N'utilisez pas une carte micro SD dans un adaptateur SD.<br>
-N'utilisez pas un MAC pour la copie des fichiers.
-</div>
-
-<div style="background:#08162f;border:2px solid #00a8ff;border-radius:14px;padding:16px;font-size:11px;line-height:1.8;margin-bottom:14px">
-<b style="font-size:12px">Activation Apple CarPlay | Seat MST2 Delphi</b><br>
-<b>Prix habituel 149,00 €
+function openP2711(){document.getElementById('box').innerHTML=`<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button><img src="IMG-20260920-WA5345.jpg" style="width:100%;height:280px;object-fit:cover"><div style="padding:16px"><h3 style="color:#00ff88">MH2P_ER_AU_P2711 Sans fil - 190€</h3><div style="background:#0a1a12;border:1px solid #00ff88;border-radius:12px;padding:12px;font-size:11px;line-height:1.6">✅ CarPlay sans fil + Android sans fil<br>✅ Porsche MH2p PCM5<br>Aucun matériel - Q3 Q8 A6 C8 A1 GB A7 4K Touareg</div><a class="btn" href="https://wa.me/33666085584?text=MH2P_190">📲 WHATSAPP 190€</a></div>`;document.getElementById('modal').classList.add('open')}
+function openPorsche(){document.getElementById('box').innerHTML=`<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button><img src="IMG-20260920-WA7507.jpg" style="width:100%;height:280px;object-fit:cover"><div style="padding:16px"><h3 style="color:#00ff88">Porsche POG11 Full Screen 130€</h3><a class="btn" href="https://wa.me/33666085584?text=Porsche_130">📲 WHATSAPP 130€</a></div>`;document.getElementById('modal').classList.add('open')}
+function openVW(){document.getElementById('box').innerHTML=`<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button><div style="padding:16px"><h3 style="color:#00ff88">VW PxxxD 70€ À DISTANCE</h3><a class="btn" href="https://wa.me/33666085584?text=VW_70">📲 WHATSAPP VW</a></div>`;document.getElementById('modal').classList.add('open')}
+function openSeat(){document.getElementById('box').innerHTML=`<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button><img src="IMG-20260920-WA8298.jpg" style="width:100%;height:320px;object-fit:cover"><div style="padding:18px"><h3 style="color:#ffa500">FULL LINK pour Seat (Apple CarPlay / Android Auto) - Seat MST2 Delphi - 70€</h3><div style="background:#0a1a12;border:2px solid #ffa500;border-radius:14px;padding:16px;font-size:11px;line-height:1.8;margin-bottom:14px"><b style="color:#ffa500">FULL LINK pour Seat (Apple CarPlay / Android Auto)</b><br><br>Activation Full Link Seat<br>Activation Apple CarPlay filaire<br>Activation Android Auto filaire<br>Activation Commandes vocales<br>Activation Moniteur de performances<br><br><b>Infos à nous communiquer :</b><br>Référence autoradio MST2_EU_SE_XX_XXXXXX (MENU 3s)<br>2 emplacements SD (avec navigation) obligatoire<br><br><b>Prérequis :</b> Carte SD<br><br><b>Procédure d'installation :</b><br>Téléchargez ZIP → Copiez racine SD → Insérez SD voiture → Contact + moteur → MENU 3s → Mise à jour logiciel/versions → Mise à jour → Source Carte SD → Version détectée → Démarrer Continuer → Attendre 2-3min → Annuler/Retour → Redémarre → Retirez SD → ON 60s = <b style="color:#00ff88">Succès !</b><br><br><b>Avertissement :</b> Pas SD nav / Pas micro SD adaptateur / Pas MAC<br><br><b>Activation Apple CarPlay | Seat MST2 Delphi - Prix habituel 149€ → VAGMIB2 70€ sur place</b><br>Waze, Coyote, Siri, Google Maps, Spotify...<br>1 seule étape : insertion carte SD<br><b>UNIQUEMENT DELPHI & TECHNISAT</b><br>Versions: MST2_EU_SE_PXXXXD / PQ_PxxxxD / ZR_PxxxxD / PQ_PxxxxT / ZR_PxxxxT<br>Navigation origine obligatoire - Pas Virtual Cockpit<br>Vérif: MENU 10s → Mise à jour logiciel/version<br>USB CarPlay réf: <b style="color:#00ff88">5G0035222E</b> verte obligatoire</div><a class="btn" href="https://wa.me/33666085584?text=SEAT_Full_Link_70_5G0035222E">📲 WHATSAPP SEAT FULL LINK 70€</a></div>`;document.getElementById('modal').classList.add('open')}
+function openSkoda(){document.getElementById('box').innerHTML=`<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button><div style="padding:16px"><h3 style="color:#ffa500">SKODA + MHI2/MHI2Q 70€ SUR PLACE</h3><a class="btn" href="https://wa.me/33666085584?text=Sur_place_70">📲 WHATSAPP</a></div>`;document.getElementById('modal').classList.add('open')}
+document.getElementById('modal').addEventListener('click',function(e){if(e.target.id==='modal')this.classList.remove('open')});
+</script>
+</body>
+</html>
