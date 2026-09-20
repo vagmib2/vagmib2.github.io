@@ -1,66 +1,93 @@
 <!doctype html>
 <html lang="fr">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VAGMIB2 MONTPELLIER - CarPlay VAG</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VAGMIB2 MONTPELLIER 34000 - CarPlay VAG 2015-2023</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{background:#050a14;color:#e5e5e5;font-family:sans-serif}
-.hero{background:#0e224a;padding:20px;text-align:center;border-bottom:2px solid #00a8ff}
-.hero img{width:110px;height:110px;border-radius:50%;border:3px solid #00a8ff;object-fit:cover;background:#000}
-.grid{max-width:800px;margin:0 auto;padding:12px;display:grid;gap:16px}
-.card{background:#0d1a33;border:1px solid #1a2f5a;border-radius:16px;overflow:hidden}
-.head{padding:11px 12px;display:flex;justify-content:space-between;background:#08162f;font-weight:900;font-size:11px}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#050a14;color:#e5e5e5;font-family:Inter,sans-serif;line-height:1.4}
+.hero{background:#0e224a;padding:22px;text-align:center;border-bottom:2px solid #00a8ff}
+.hero img{width:100px;height:100px;border-radius:50%;border:3px solid #00a8ff;object-fit:cover}
+.alert-red{border:2px solid #ff1a1a;background:#1a0a0a;border-radius:14px;padding:14px;margin:12px auto;max-width:800px;font-size:11px}
+.alert-red b{color:#ff3b3b}
+.clean{background:#0d1a33;border:1px solid #1a2f5a;border-radius:14px;padding:14px;margin:12px auto;max-width:800px;font-size:11px;color:#cbd5e1}
+.clean h3{color:#00a8ff;font-size:12px;margin-bottom:8px}
+.grid{max-width:800px;margin:0 auto;padding:12px;display:grid;gap:14px}
+.card{background:#0d1a33;border:1px solid #1a2f5a;border-radius:16px;overflow:hidden;cursor:pointer}
+.card:hover{border-color:#00a8ff}
+.head{padding:10px 12px;display:flex;justify-content:space-between;background:#08162f;font-weight:900;font-size:11px}
 .pr{background:#00a8ff;color:#000;padding:4px 10px;border-radius:999px}
-.photo{width:100%;height:330px;object-fit:cover;background:#000;display:block}
-.tbl{width:100%;border-collapse:collapse;background:#08162f;font-size:11px;margin-top:6px}
-.tbl td{padding:8px 10px;border-bottom:1px solid #1a2f5a}
-.tbl td:first-child{color:#8aa0c0;width:125px;font-size:9px;font-weight:700}
+.photo{width:100%;height:300px;object-fit:cover;background:#000;display:block}
+.short{padding:10px;font-size:10px;color:#8aa0c0}
+.tbl{width:100%;border-collapse:collapse;background:#08162f;font-size:11px}
+.tbl td{padding:8px 10px;border-bottom:1px solid #1a2f5a}.tbl td:first-child{color:#8aa0c0;width:125px;font-size:9px;font-weight:700}
 .btn{display:block;background:#00a8ff;color:#000;text-align:center;padding:12px;border-radius:10px;font-weight:900;text-decoration:none;margin:10px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:99;padding:12px}
+.modal.open{display:flex}.modal-box{background:#0d1a33;border:2px solid #00a8ff;border-radius:18px;max-width:520px;width:100%;max-height:92vh;overflow-y:auto}
+.modal-box img{width:100%;height:300px;object-fit:cover}
 </style>
 <body>
 
 <div class="hero">
-<img src="IMG-20260918-WA6398.jpg" alt="Logo">
+<img src="IMG-20260918-WA6398.jpg" onerror="this.src='logo.jpg'">
 <h1>VAGMIB2 <span style="color:#00a8ff">MONTPELLIER 34000</span></h1>
-<p style="font-size:10px;color:#8aa0c0">06 66 08 55 84 - @VAG_AUTOMIB2</p>
+<p style="font-size:10px;color:#8aa0c0">Expert VAG 2015-2023 - MIB MST2 / MHI2 / MH2P / POG11</p>
+<p style="font-size:10px;margin-top:6px">06 66 08 55 84 / 04.65.84.21.43 - @VAG_AUTOMIB2</p>
+</div>
+
+<!-- ENCADRE ROUGE CONDITIONS -->
+<div class="alert-red">
+<b>⚠️ CONDITIONS VAG 2015-2023 - MERCI DE LIRE</b><br><br>
+Ces services sont disponibles pour les véhicules du groupe VAG (Seat, Skoda, Volkswagen, Audi, Porsche) Entre Fin 2015 et 2023, équipés d'un système MIB MST2/MHI2/MH2P avec navigation, avec ou sans bouton App-Connect Android Auto - CarPlay avec commande vocale.<br><br>
+<b>🔧 MODES D'INTERVENTION :</b><br>
+> <b>À DISTANCE (PC Windows + Carte SD)</b> disponible uniquement pour :<br>
+<b style="color:#00ff88">MST2_EU_VW_PxxxD</b> ou <b style="color:#00ff88">MH2P_ER_AU_PXXX</b><br><br>
+> Pour les autres versions (MHI2/MHI2Q/POG11...) → <b>Intervention sur place à Montpellier 34000 obligatoire, durée 30 à 45 minutes.</b>
+</div>
+
+<div class="clean">
+<h3>TARIFS ACTUELS 100% CLEAN (sans diag/lecture)</h3>
+- <b>MH2P_ER_AU_P2711 Sans fil Sans matériel Q3 Q8 A6 C8 A1 GB A7 4K Touareg PCM5 → À partir de 190€</b> [Compatible à distance si PXXX]<br>
+- <b>MHI2/MHI2Q A3 A4 A5 A6 A7 Q2 Q5 Q7 TT R8 → À partir de 70€</b> [Sur place Montpellier 30-45min]<br>
+- <b>Porsche PCM4.0 POG11 + Touareg Full Screen → 130€</b> [Sur place Montpellier 30-45min]<br><br>
+📍 Montpellier 34000 sur place ou à distance selon version<br>
+📲 WhatsApp RDV : 06 66 08 55 84 / 04.65.84.21.43
 </div>
 
 <div class="grid">
 
-<!-- 1 PORSCHE WA7507 -->
-<div class="card">
-<div class="head"><span>PORSCHE FULL SCREEN</span><span class="pr" style="background:#00ff88">130€</span></div>
+<div class="card" onclick="openModal('porsche')">
+<div class="head"><span>PORSCHE PCM4.0 FULL SCREEN</span><span class="pr" style="background:#00ff88">130€</span></div>
 <img class="photo" src="IMG-20260920-WA7507.jpg">
-<table class="tbl">
-<tr><td>Modèles compatibles</td><td>Panamera 971 / Cayenne 9YA / Macan 2019+ / Touareg CR</td></tr>
-<tr><td>Version firmware</td><td>POG11_EU_P5120 / PCM4.0 v4.0.22 à v4.0.52</td></tr>
-<tr><td>Ce que tu actives</td><td>Full Screen 10 icônes CarPlay + Android Auto Full</td></tr>
-<tr><td>Procédure</td><td>SUR PLACE Montpellier uniquement</td></tr>
-<tr><td>Temps</td><td>40-45min - Garantie à vie</td></tr>
-</table>
-<a class="btn" href="https://wa.me/33666085584?text=Porsche%20WA7507%20130">WHATSAPP PORSCHE 130€</a>
+<div class="short">Cliquer pour détails - Panamera 971 / Cayenne 9YA / Macan - POG11 - SUR PLACE 40-45min</div>
 </div>
 
-<!-- 2 AUDI WA5345 -->
-<div class="card">
-<div class="head"><span>AUDI MH2P WIRELESS</span><span class="pr">190€</span></div>
+<div class="card" onclick="openModal('audi')">
+<div class="head"><span>AUDI MH2P WIRELESS Q3 Q8 A6</span><span class="pr">190€</span></div>
 <img class="photo" src="IMG-20260920-WA5345.jpg">
-<table class="tbl">
-<tr><td>Modèles compatibles</td><td>Q3 F3 / Q8 / A6 C8 / A7 C8 / A8 D5 / e-tron 2019-2023</td></tr>
-<tr><td>Version firmware</td><td>MH2P_ER_AU_P2711 / P2148 / P2035</td></tr>
-<tr><td>Ce que tu actives</td><td>CarPlay sans fil + Android Auto sans fil - Sans boitier</td></tr>
-<tr><td>Procédure</td><td>À DISTANCE possible ou sur place</td></tr>
-<tr><td>Temps</td><td>25-30min</td></tr>
-</table>
-<a class="btn" href="https://wa.me/33666085584?text=Audi%20WA5345%20190">WHATSAPP AUDI 190€</a>
+<div class="short">Cliquer pour détails - Sans fil sans boitier - À DISTANCE possible PXXX - 25min</div>
 </div>
 
-<!-- 3 VW WA7942 -->
-<div class="card">
-<div class="head"><span>VOLKSWAGEN MIB2</span><span class="pr">70€</span></div>
+<div class="card" onclick="openModal('mhi2')">
+<div class="head"><span>AUDI MHI2 / MHI2Q A3 A4 A5 Q2 Q5 Q7</span><span class="pr" style="background:#ffa500">70€</span></div>
 <img class="photo" src="IMG-20260920-WA7942.jpg">
+<div class="short">Cliquer pour détails - A3 A4 A5 A6 A7 Q2 Q5 Q7 TT R8 - SUR PLACE 30-45min Montpellier</div>
+</div>
+
+<div class="card" onclick="openModal('vw')">
+<div class="head"><span>VW / SKODA / SEAT MST2</span><span class="pr">70€</span></div>
+<img class="photo" src="IMG-20260920-WA9460.jpg">
+<div class="short">Cliquer pour détails - Golf 7 Tiguan Passat Scala Kamiq Ibiza Leon - Distance 15min</div>
+</div>
+
+</div>
+
+<div id="modal" class="modal" onclick="if(event.target==this)closeModal()"><div class="modal-box" id="box"></div></div>
+
+<script>
+const D={
+porsche:{img:'IMG-20260920-WA7507.jpg',t:'PORSCHE PCM4.0 POG11 FULL SCREEN 130€',h:`
 <table class="tbl">
-<tr><td>Modèles compatibles</td><td>Golf 7 / 7.5 / Tiguan 2 / Passat B8 / Polo 6 / T-Roc</td></tr>
-<tr><td>Version firmware</td><td>MST2_EU_VW_P0xxxD - P0635D / P0890D</td></tr>
-<tr><td>Ce que tu actives</td><td>App-Connect CarPlay + Android Auto + MirrorLink</td></tr>
-<tr><td>Procédure</td><td>À DISTANCE - PC +
+<tr><td>Modèles compatibles</td><td>Panamera 971 2017-2023 / Cayenne 9YA 2018-2023 / Macan 2019-2023 / Touareg CR / Bentley Bentayga</td></tr>
+<tr><td>Version firmware</td><td>POG11_EU_P5120 / P5092 / PCM4.0 v4.0.22 à v4.0.52</td></tr>
+<tr><td>Ce que tu actives</td><td>Full Screen 10 icônes CarPlay (au lieu de 2 bandes noires) + Android Auto Full + Cartes 2026</td></tr>
+<tr><td>Procédure</td><td>SUR PLACE Montpellier 34000 obligatoire - 30-45min - Démontage écran + patch eMMC - Sans boitier</td></tr>
+<tr><td>Temps</td><td>40-45 minutes - Garantie à vie</td></
