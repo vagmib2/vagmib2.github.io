@@ -1,46 +1,123 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VAGMIB2 - Activation CarPlay Audi</title>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VAGMIB2 Montpellier 34000 - Activation CarPlay Android Auto VAG</title>
+<meta name="description" content="Activation CarPlay Android Auto Montpellier 34000. VAG Seat Skoda VW Audi Porsche 2015-2023 MIB MST2 MHI2 MH2P. À partir de 70€.">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
-body{background:#0a0a0e;color:#fff}
-header{padding:12px 4%;display:flex;justify-content:space-between;align-items:center;background:#0a0a0e;border-bottom:1px solid #222;position:sticky;top:0}
-header img{height:48px;object-fit:contain}
-nav{display:flex;gap:20px;align-items:center}
-nav a{color:#999;text-decoration:none;font-size:14px}
-nav a.active{color:#fff;border-bottom:2px solid #2a90ff;padding-bottom:3px}
-.phone{border:1px solid #2a90ff;color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
-.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:30px 0 0 5%;background:#0a0a0e}
-.badge{background:#1a2a44;color:#4aa3ff;padding:6px 12px;border-radius:8px;font-size:12px;display:inline-block;margin-bottom:15px}
-.hero h1{font-size:42px;line-height:1.1;font-weight:800}
-.hero p{color:#888;margin:12px 0 18px;font-size:15px;line-height:1.4}
-.btns{display:flex;gap:10px}
-.btn-blue{background:#2a90ff;padding:12px 20px;border-radius:10px;color:#fff;font-weight:700;text-decoration:none}
-.btn-dark{border:1px solid #333;padding:12px 20px;border-radius:10px;color:#fff;text-decoration:none}
-.hero-img{background:url('https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800') center/cover;min-height:420px;border-radius:18px 0 0 18px}
-.tarifs{background:#111116;padding:40px 5%;text-align:center}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;max-width:1000px;margin:25px auto 0}
-.card{background:#18181e;border:1px solid #222;border-radius:14px;padding:22px}
-.price{color:#7fcf6a;font-size:32px;font-weight:800;margin:8px 0}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-img{height:280px}nav{display:none}.cards{grid-template-columns:1fr}}
-</style></head><body>
-<header>
-<img src="IMG-20260918-WA6884.jpg" alt="VAGMIB2">
-<nav><a class="active" href="#">Accueil</a><a href="#">Services</a><a href="#">Tarifs</a><a href="https://wa.me/33666085584">Contact</a><a class="phone" href="https://wa.me/33666085584">📞 06 66 08 55 84</a></nav>
-</header>
+*{margin:0;padding:0;box-sizing:border-box}body{background:#080808;color:#e5e5e5;font-family:Inter,system-ui,sans-serif;line-height:1.6}
+.hero{background:radial-gradient(ellipse at top,#1a1a1a 0%,#080808 70%);padding:50px 20px;text-align:center;border-bottom:1px solid #1a1a1a}
+.hero h1{font-size:36px;font-weight:900;color:#fff;letter-spacing:-1px}.hero h1 span{color:#00ff88}
+.hero .sub{max-width:800px;margin:15px auto 0;color:#999;font-size:14px;line-height:1.6}
+.badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}
+.badge{padding:8px 16px;border-radius:999px;font-weight:800;font-size:12px;letter-spacing:0.3px}
+.b-green{background:#00ff88;color:#000}.b-red{background:#1a0a0a;color:#ff3b30;border:1px solid #ff3b30}.b-gray{background:#141414;color:#bbb;border:1px solid #222}
+.wrap{max-width:1100px;margin:0 auto;padding:30px 20px}
+.alert{display:flex;gap:14px;background:#141414;border:1px solid #ff3b30;border-left:4px solid #ff3b30;border-radius:12px;padding:18px;margin:20px 0}
+.alert b{color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px;margin-top:10px}
+.card{background:#121212;border:1px solid #222;border-radius:18px;padding:24px;transition:0.2s}
+.card:hover{border-color:#333}.card.best{border-color:#00ff88;box-shadow:0 0 30px rgba(0,255,136,0.12)}
+.card h3{font-size:18px;color:#fff}.card .muted{font-size:12px;color:#888;margin:4px 0 10px}
+.price{font-size:34px;font-weight:900;color:#00ff88}.price small{font-size:12px;color:#888;font-weight:600}
+ul{list-style:none;margin:12px 0}li{font-size:13px;color:#aaa;padding:4px 0 4px 22px;position:relative}li:before{content:"✓";position:absolute;left:0;color:#00ff88;font-weight:900}
+.btn{display:block;text-align:center;padding:13px;border-radius:11px;font-weight:900;text-decoration:none;margin-top:14px;font-size:13px}
+.btn-green{background:#00ff88;color:#000}.btn-dark{background:#1e1e1e;color:#fff;border:1px solid #2a2a2a}
+.section{background:#111;border:1px solid #1e1e1e;border-radius:16px;padding:24px;margin-top:24px}
+.section h2{font-size:20px;color:#fff;margin-bottom:10px}
+.section p{font-size:13px;color:#aaa}
+.map{border-radius:16px;overflow:hidden;border:1px solid #222;margin-top:24px}
+.map img{width:100%;display:block;filter:grayscale(0.2) contrast(1.1)}
+.contact-bar{background:#00ff88;color:#000;text-align:center;padding:14px;border-radius:12px;font-weight:900;margin-top:24px;font-size:15px}
+.contact-bar a{color:#000;text-decoration:none}
+footer{text-align:center;color:#444;font-size:11px;margin:30px 0 10px}
+</style>
+</head>
+<body>
 <div class="hero">
-<div>
-<div class="badge">● Spécialiste MIB2</div>
-<h1>Activation CarPlay & Android Auto d'origine.</h1>
-<p>Débloquez CarPlay & Android Auto sur votre système Audi MIB2 en toute sécurité. Compatible tous modèles Audi 2016-2020.</p>
-<div class="btns"><a class="btn-blue" href="https://wa.me/33666085584?text=Devis%20CarPlay">Demander maintenant ↗</a><a class="btn-dark" href="#">En savoir plus</a></div>
+<h1>VAGMIB2 <span>MONTPELLIER 34000</span></h1>
+<p class="sub">Ces services sont disponibles pour les véhicules du groupe VAG (Seat, Skoda, Volkswagen, Audi, Porsche) Entre Fin 2015 et 2023, équipés d'un système MIB MST2/MHI2/MHS2 avec navigation, avec ou sans bouton App-Connect Android Auto - CarPlay avec commande vocale.<br><br>
+Cette fonctionnalité est compatible uniquement avec les véhicules équipés d’un autoradio <b style="color:#fff">MH2P_ER_AU_P2711</b> ainsi que les Porsche dotées d’un système autoradio PMC5, les Audi Q3, Q8, A6 C8, A1 GB et A7 4K, et les Volkswagen Touareg. L’activation du CarPlay sans fil est possible sur les modèles mentionnés ci-dessus Audi à partir 2019 Porsche, Touareg.</p>
+<div class="badges">
+<div class="badge b-green">À PARTIR DE 70€ SELON VERSION</div>
+<div class="badge b-red">📍 SUR PLACE MONTPELLIER 30-45 MIN</div>
+<div class="badge b-gray">💻 À DISTANCE PC + SD SELON VERSION</div>
 </div>
-<div class="hero-img"></div>
 </div>
-<div class="tarifs"><h2>Nos Tarifs Transparents</h2>
-<div class="cards">
-<div class="card"><h3>Diag</h3><div class="price">90€</div><p style="color:#777;font-size:12px">Lecture défauts complète<br>Rapport PDF</p></div>
-<div class="card"><h3>Lecture</h3><div class="price">30€</div><p style="color:#777;font-size:12px">Version logiciel<br>Codage actuel</p></div>
-<div class="card" style="border-color:#2a90ff"><h3>Activation dès</h3><div class="price">150€</div><p style="color:#777;font-size:12px">CarPlay sans fil + Android Auto<br>Garantie 12 mois</p></div>
-</div></div>
-</body></html>
+
+<div class="wrap">
+<div class="alert">
+<div>⚠️</div>
+<div style="font-size:13px;color:#ccc">
+<b>Mode d'intervention :</b><br>
+<b style="color:#00ff88">À DISTANCE</b> disponible pour tous les modèles dont le micrologiciel débute par <b>MST2_EU_VW_PxxxD</b> ou <b>MH2P_ER_AU_PXXX</b> (PC Windows + Carte SD).<br>
+<b style="color:#ff3b30">Sur place à Montpellier 34000</b> obligatoire pour les autres versions (MHI2 / MHI2Q / POG11...), durée 30 à 45 minutes.
+</div>
+</div>
+
+<div class="grid">
+<div class="card best">
+<h3>🔥 MH2P_ER_AU_P2711 : Sans fil, Sans matériel</h3>
+<div class="muted">Q3 Q8 A6 C8 A1 GB A7 4K Touareg PCM5 - PCM5 • Compatible sans fil 2019+</div>
+<div class="price">À partir de 190€ <small>sans fil + sans matériel</small></div>
+<ul>
+<li>Sans fil, sans matériel supplémentaire</li>
+<li>CarPlay + Android Auto plein écran 100% origine</li>
+<li>À distance si MH2P_ER_AU_PXXX</li>
+<li>Invisible à la valise</li>
+</ul>
+<a class="btn btn-green" href="https://wa.me/33666085584?text=MH2P_P2711_190_Montpellier">VÉRIFIER MA VERSION - RDV WHATSAPP</a>
+</div>
+
+<div class="card">
+<h3>MHI2 / MHI2Q HARMAN</h3>
+<div class="muted">A3 A4 A5 A6 A7 Q2 Q5 Q7 TT R8 - 32 versions dont MHI2Q AUG22 P3638 à K3344</div>
+<div class="price">À partir de 70€</div>
+<ul>
+<li>CarPlay + Android Auto plein écran</li>
+<li>MHI2 AU276 / AU37x / AU43x / AU57x</li>
+<li>Sur place Montpellier 30-45 min</li>
+<li>Activation d'origine</li>
+</ul>
+<a class="btn btn-dark" href="https://wa.me/33666085584?text=MHI2_70_Montpellier">ENVOYER PHOTO VERSION</a>
+</div>
+
+<div class="card">
+<h3>Porsche PCM4.0 POG11 + Touareg</h3>
+<div class="muted">Macan Cayman 911 991 + Touareg Full Screen - Ex: MHI2_ER_POG11_P4172</div>
+<div class="price">130€</div>
+<ul>
+<li>CarPlay sans fil disponible selon année</li>
+<li>Touareg Full Screen upgrade</li>
+<li>Sur place Montpellier 30-45 min</li>
+<li>Installation 30-60 min</li>
+</ul>
+<a class="btn btn-dark" href="https://wa.me/33666085584?text=PCM4_POG11_130">DEVIS 130€ WHATSAPP</a>
+</div>
+</div>
+
+<div class="section">
+<h2>Activation CarPlay MIB2/MST2 : guide complet Volkswagen Golf, Polo, Passat</h2>
+<p>Si vous possédez une Volkswagen Golf, Polo ou Passat 2015-2019 avec MIB2/MST2, CarPlay peut être désactivé d'origine.<br><br>
+<b style="color:#fff">🔍 Comment savoir si c'est MIB2/MST2 ?</b><br>
+- Écran tactile 6,5" à 8" • Ports USB console centrale • Menu App-Connect grisé • Version MST2_EU_ ou MHI2_<br>
+Appui long 5 sec sur MENU > Version / Mise à jour > Envoyez photo pour vérif gratuite.<br><br>
+<b style="color:#fff">✅ Activation</b> via carte SD ou à distance PC Windows • 100% origine • Android Auto inclus<br><br>
+<b style="color:#fff">🚘 Modèles compatibles :</b> Golf 7 (2015-2019), Polo 6C (2016-2018), Passat B8 (2015-2019), Tiguan, Touran, T-Roc, T6 et autres MIB2<br><br>
+Veuillez consulter attentivement la description complète du produit. N'hésitez pas à me contacter pour toute information complémentaire.
+</p>
+</div>
+
+<div class="section">
+<h2>📍 Nous trouver à Montpellier 34000</h2>
+<p>Intervention sur place à Montpellier 34000 pour les versions non compatibles à distance. À distance partout en France pour MST2_EU_VW_PxxxD et MH2P_ER_AU_PXXX avec PC Windows + carte SD.</p>
+<div class="map"><img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200" alt="Montpellier 34000 Map"></div>
+<p style="margin-top:12px">📲 Contact WhatsApp pour RDV Montpellier : <b style="color:#fff">06 66 08 55 84</b> / 04.65.84.21.43 - Horaires Lun-Ven 9h-18h</p>
+</div>
+
+<div class="contact-bar"><a href="https://wa.me/33666085584?text=RDV_Montpellier_34000">📲 CONTACTER SUR WHATSAPP POUR RDV MONTPELLIER 34000 - 06 66 08 55 84</a></div>
+
+<footer>VAGMIB2 • Montpellier 34000 • Paiement sécurisé • Garantie • Support Expert 7/7 • Tous droits réservés<br>Ces services sont disponibles pour les véhicules du groupe VAG 2015-2023 MIB MST2/MHI2/MHS2/MH2P avec navigation</footer>
+</div>
+</body>
+</html>
