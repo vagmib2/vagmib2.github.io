@@ -1,93 +1,156 @@
 <!doctype html>
 <html lang="fr">
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VAGMIB2 MONTPELLIER 34000 - CarPlay VAG 2015-2023</title>
+<title>VAGMIB2 MONTPELLIER 34000</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{background:#050a14;color:#e5e5e5;font-family:Inter,sans-serif;line-height:1.4}
-.hero{background:#0e224a;padding:22px;text-align:center;border-bottom:2px solid #00a8ff}
-.hero img{width:100px;height:100px;border-radius:50%;border:3px solid #00a8ff;object-fit:cover}
-.alert-red{border:2px solid #ff1a1a;background:#1a0a0a;border-radius:14px;padding:14px;margin:12px auto;max-width:800px;font-size:11px}
-.alert-red b{color:#ff3b3b}
-.clean{background:#0d1a33;border:1px solid #1a2f5a;border-radius:14px;padding:14px;margin:12px auto;max-width:800px;font-size:11px;color:#cbd5e1}
-.clean h3{color:#00a8ff;font-size:12px;margin-bottom:8px}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#050a14;color:#e5e5e5;font-family:sans-serif}
+.hero{background:#0e224a;padding:20px;text-align:center;border-bottom:3px solid #00a8ff}
+.hero img{width:90px;height:90px;border-radius:50%;border:3px solid #00a8ff;object-fit:cover}
+.official{border:3px solid #00a8ff;background:#08162f;border-radius:16px;padding:16px;margin:12px auto;max-width:800px;font-size:12px;text-align:center;line-height:1.7}
+.tarifs{background:#0d1a33;border-radius:14px;padding:14px;margin:12px auto;max-width:800px;font-size:11px;line-height:1.9;border:1px solid #1a2f5a}
 .grid{max-width:800px;margin:0 auto;padding:12px;display:grid;gap:14px}
-.card{background:#0d1a33;border:1px solid #1a2f5a;border-radius:16px;overflow:hidden;cursor:pointer}
-.card:hover{border-color:#00a8ff}
-.head{padding:10px 12px;display:flex;justify-content:space-between;background:#08162f;font-weight:900;font-size:11px}
-.pr{background:#00a8ff;color:#000;padding:4px 10px;border-radius:999px}
-.photo{width:100%;height:300px;object-fit:cover;background:#000;display:block}
-.short{padding:10px;font-size:10px;color:#8aa0c0}
-.tbl{width:100%;border-collapse:collapse;background:#08162f;font-size:11px}
-.tbl td{padding:8px 10px;border-bottom:1px solid #1a2f5a}.tbl td:first-child{color:#8aa0c0;width:125px;font-size:9px;font-weight:700}
-.btn{display:block;background:#00a8ff;color:#000;text-align:center;padding:12px;border-radius:10px;font-weight:900;text-decoration:none;margin:10px}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:99;padding:12px}
-.modal.open{display:flex}.modal-box{background:#0d1a33;border:2px solid #00a8ff;border-radius:18px;max-width:520px;width:100%;max-height:92vh;overflow-y:auto}
-.modal-box img{width:100%;height:300px;object-fit:cover}
+.card{background:#0d1a33;border:2px solid #1a2f5a;border-radius:16px;overflow:hidden;cursor:pointer}
+.card:hover{border-color:#00a8ff;box-shadow:0 0 20px rgba(0,168,255,.3)}
+.head{padding:11px 12px;display:flex;justify-content:space-between;background:#08162f;font-weight:900;font-size:11px;align-items:center}
+.pr{padding:5px 10px;border-radius:999px;font-weight:900;font-size:11px}
+.photo{width:100%;height:280px;object-fit:cover;background:#000;display:block}
+.click-hint{background:#00a8ff;color:#000;text-align:center;padding:8px;font-weight:900;font-size:11px}
+.tbl{width:100%;border-collapse:collapse;background:#08162f;font-size:11px}.tbl td{padding:9px 10px;border-bottom:1px solid #1a2f5a}.tbl td:first-child{color:#8aa0c0;width:130px;font-size:9px;font-weight:700}
+.btn{display:block;background:#25D366;color:#000;text-align:center;padding:14px;border-radius:12px;font-weight:900;text-decoration:none;margin:12px;font-size:13px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:9999;padding:10px}
+.modal.open{display:flex}
+.modal-box{background:#0d1a33;border:3px solid #00a8ff;border-radius:20px;max-width:560px;width:100%;max-height:95vh;overflow-y:auto;position:relative}
+.close{position:absolute;top:10px;right:10px;background:#ff1a1a;color:#fff;border:0;padding:8px 14px;border-radius:999px;font-weight:900;z-index:10;cursor:pointer}
 </style>
 <body>
 
 <div class="hero">
-<img src="IMG-20260918-WA6398.jpg" onerror="this.src='logo.jpg'">
-<h1>VAGMIB2 <span style="color:#00a8ff">MONTPELLIER 34000</span></h1>
-<p style="font-size:10px;color:#8aa0c0">Expert VAG 2015-2023 - MIB MST2 / MHI2 / MH2P / POG11</p>
-<p style="font-size:10px;margin-top:6px">06 66 08 55 84 / 04.65.84.21.43 - @VAG_AUTOMIB2</p>
+<img src="IMG-20260918-WA6398.jpg">
+<h1>VAGMIB2 MONTPELLIER 34000</h1>
+<p style="font-size:11px;color:#8aa0c0;margin-top:6px">04.65.84.21.43 / 06 66 08 55 84 - @VAG_AUTOMIB2</p>
 </div>
 
-<!-- ENCADRE ROUGE CONDITIONS -->
-<div class="alert-red">
-<b>⚠️ CONDITIONS VAG 2015-2023 - MERCI DE LIRE</b><br><br>
-Ces services sont disponibles pour les véhicules du groupe VAG (Seat, Skoda, Volkswagen, Audi, Porsche) Entre Fin 2015 et 2023, équipés d'un système MIB MST2/MHI2/MH2P avec navigation, avec ou sans bouton App-Connect Android Auto - CarPlay avec commande vocale.<br><br>
-<b>🔧 MODES D'INTERVENTION :</b><br>
-> <b>À DISTANCE (PC Windows + Carte SD)</b> disponible uniquement pour :<br>
-<b style="color:#00ff88">MST2_EU_VW_PxxxD</b> ou <b style="color:#00ff88">MH2P_ER_AU_PXXX</b><br><br>
-> Pour les autres versions (MHI2/MHI2Q/POG11...) → <b>Intervention sur place à Montpellier 34000 obligatoire, durée 30 à 45 minutes.</b>
+<div class="official">
+🔧 <b>MODES D'INTERVENTION</b><br><br>
+L'activation à distance est disponible pour tous les modèles dont le micrologiciel débute par<br>
+<b style="color:#00ff88">MST2_EU_VW_PxxxD</b> ou <b style="color:#00ff88">MH2P_ER_AU_PXXX</b>.<br><br>
+Pour les autres versions, une intervention sur place à Montpellier est nécessaire, pour une durée de 30 à 45 minutes.
 </div>
 
-<div class="clean">
-<h3>TARIFS ACTUELS 100% CLEAN (sans diag/lecture)</h3>
-- <b>MH2P_ER_AU_P2711 Sans fil Sans matériel Q3 Q8 A6 C8 A1 GB A7 4K Touareg PCM5 → À partir de 190€</b> [Compatible à distance si PXXX]<br>
-- <b>MHI2/MHI2Q A3 A4 A5 A6 A7 Q2 Q5 Q7 TT R8 → À partir de 70€</b> [Sur place Montpellier 30-45min]<br>
-- <b>Porsche PCM4.0 POG11 + Touareg Full Screen → 130€</b> [Sur place Montpellier 30-45min]<br><br>
-📍 Montpellier 34000 sur place ou à distance selon version<br>
-📲 WhatsApp RDV : 06 66 08 55 84 / 04.65.84.21.43
+<div class="tarifs">
+<b style="color:#00a8ff">TARIFS ACTUELS :</b><br>
+- <b>MH2P_ER_AU_P2711 Sans fil Sans matériel Q3 Q8 A6 C8 A1 GB A7 4K Touareg PCM5 → À partir de 190€</b> [À distance]<br>
+- <b>MHI2/MHI2Q A3 A4 A5 A6 A7 Q2 Q5 Q7 TT R8 → À partir de 70€</b> [Sur place 30-45min]<br>
+- <b>Porsche PCM4.0 POG11 + Touareg Full Screen → 130€</b> [À distance]
 </div>
 
 <div class="grid">
 
-<div class="card" onclick="openModal('porsche')">
-<div class="head"><span>PORSCHE PCM4.0 FULL SCREEN</span><span class="pr" style="background:#00ff88">130€</span></div>
-<img class="photo" src="IMG-20260920-WA7507.jpg">
-<div class="short">Cliquer pour détails - Panamera 971 / Cayenne 9YA / Macan - POG11 - SUR PLACE 40-45min</div>
-</div>
-
-<div class="card" onclick="openModal('audi')">
-<div class="head"><span>AUDI MH2P WIRELESS Q3 Q8 A6</span><span class="pr">190€</span></div>
+<div class="card" onclick="openP2711()">
+<div class="head"><span>MH2P_ER_AU_P2711 SANS FIL SANS MATÉRIEL</span><span class="pr" style="background:#00ff88">190€ À DISTANCE</span></div>
 <img class="photo" src="IMG-20260920-WA5345.jpg">
-<div class="short">Cliquer pour détails - Sans fil sans boitier - À DISTANCE possible PXXX - 25min</div>
+<div class="click-hint">👆 CLIQUEZ ICI POUR DÉTAILS COMPLETS</div>
 </div>
 
-<div class="card" onclick="openModal('mhi2')">
-<div class="head"><span>AUDI MHI2 / MHI2Q A3 A4 A5 Q2 Q5 Q7</span><span class="pr" style="background:#ffa500">70€</span></div>
+<div class="card" onclick="openPorsche()">
+<div class="head"><span>PORSCHE PCM4.0 POG11 + TOUAREG FULL SCREEN</span><span class="pr" style="background:#00ff88">130€ À DISTANCE</span></div>
+<img class="photo" src="IMG-20260920-WA7507.jpg">
+<div class="click-hint">👆 CLIQUEZ ICI - FULL SCREEN</div>
+</div>
+
+<div class="card" onclick="openVW()">
+<div class="head"><span>VW MST2_EU_VW_PxxxD GOLF POLO PASSAT</span><span class="pr" style="background:#00ff88">70€ À DISTANCE</span></div>
 <img class="photo" src="IMG-20260920-WA7942.jpg">
-<div class="short">Cliquer pour détails - A3 A4 A5 A6 A7 Q2 Q5 Q7 TT R8 - SUR PLACE 30-45min Montpellier</div>
+<div class="click-hint">👆 CLIQUEZ ICI - VW À DISTANCE 15MIN</div>
 </div>
 
-<div class="card" onclick="openModal('vw')">
-<div class="head"><span>VW / SKODA / SEAT MST2</span><span class="pr">70€</span></div>
+<div class="card" onclick="openSkoda()">
+<div class="head"><span>SEAT SKODA xxxT + MHI2/MHI2Q</span><span class="pr" style="background:#ffa500">70€ SUR PLACE</span></div>
 <img class="photo" src="IMG-20260920-WA9460.jpg">
-<div class="short">Cliquer pour détails - Golf 7 Tiguan Passat Scala Kamiq Ibiza Leon - Distance 15min</div>
+<div class="click-hint" style="background:#ffa500">👆 CLIQUEZ ICI - SUR PLACE MONTPELLIER</div>
 </div>
 
 </div>
 
-<div id="modal" class="modal" onclick="if(event.target==this)closeModal()"><div class="modal-box" id="box"></div></div>
+<div id="modal" class="modal" onclick="closeModal(event)"><div class="modal-box" id="box"></div></div>
 
 <script>
-const D={
-porsche:{img:'IMG-20260920-WA7507.jpg',t:'PORSCHE PCM4.0 POG11 FULL SCREEN 130€',h:`
+function openP2711(){
+document.getElementById('box').innerHTML=`
+<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button>
+<img src="IMG-20260920-WA5345.jpg" style="width:100%;height:280px;object-fit:cover">
+<div style="padding:16px">
+<h3 style="color:#00ff88;margin:10px 0">MH2P_ER_AU_P2711 Sans fil Sans matériel - 190€ À DISTANCE</h3>
+<div style="background:#0a1a12;border:1px solid #00ff88;border-radius:12px;padding:12px;font-size:11px;line-height:1.6;margin-bottom:10px">
+<b>• Informations sur la version MH2p_ER_AU_P2711</b><br><br>
+✅ Activation de CarPlay sans fil<br>
+✅ Activation de CarPlay et Android<br>
+✅ Activation Apple CarPlay et Android Auto pour Porsche MH2p - PCM5<br><br>
+<b>Aucun matériel supplémentaire n'est requis.</b><br><br>
+Compatible avec tous les modèles Audi A1 GB, A6 C8, A7 4K, A8 et Q3 (2019-2021) ; l'activation native de CarPlay sans fil est possible.<br><br>
+Cette fonctionnalité est compatible uniquement avec les véhicules équipés d’un autoradio MH2P_ER_AU_P... ainsi que les Porsche dotées d’un système autoradio PMC5, les Audi Q3, Q8, A6 C8, A1 GB et A7 4K, et les Volkswagen Touareg.<br><br>
+L’activation du CarPlay sans fil est possible sur les modèles mentionnés ci-dessus Audi à partir 2019 Porsche, Touareg. (Q3, Q8, A6 C8, A1 GB, A7 4K).<br>
+Veuillez consulter attentivement la description complète du produit.
+</div>
 <table class="tbl">
-<tr><td>Modèles compatibles</td><td>Panamera 971 2017-2023 / Cayenne 9YA 2018-2023 / Macan 2019-2023 / Touareg CR / Bentley Bentayga</td></tr>
-<tr><td>Version firmware</td><td>POG11_EU_P5120 / P5092 / PCM4.0 v4.0.22 à v4.0.52</td></tr>
-<tr><td>Ce que tu actives</td><td>Full Screen 10 icônes CarPlay (au lieu de 2 bandes noires) + Android Auto Full + Cartes 2026</td></tr>
-<tr><td>Procédure</td><td>SUR PLACE Montpellier 34000 obligatoire - 30-45min - Démontage écran + patch eMMC - Sans boitier</td></tr>
-<tr><td>Temps</td><td>40-45 minutes - Garantie à vie</td></
+<tr><td>Modèles</td><td>Q3 Q8 A6 C8 A1 GB A7 4K Touareg PCM5 - MH2P_ER_AU_P2711 + toutes versions P...</td></tr>
+<tr><td>Version</td><td>MH2P_ER_AU_P2711 - Toutes versions MH2P_ER_AU_PXXX - ✅ À DISTANCE</td></tr>
+<tr><td>Active</td><td>CarPlay SANS FIL natif + Android Auto sans fil - Sans boitier</td></tr>
+<tr><td>Procédure</td><td>À DISTANCE - PC Windows + Carte SD + TeamViewer - 25-30min</td></tr>
+</table>
+<a class="btn" href="https://wa.me/33666085584?text=MH2P_P2711_190_sans_fil">📲 WHATSAPP MH2P 190€ SANS FIL</a>
+</div>`;
+document.getElementById('modal').classList.add('open');
+}
+function openPorsche(){
+document.getElementById('box').innerHTML=`
+<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button>
+<img src="IMG-20260920-WA7507.jpg" style="width:100%;height:280px;object-fit:cover">
+<div style="padding:16px">
+<h3 style="color:#00ff88;margin:10px 0">Porsche PCM4.0 POG11 + Touareg Full Screen → 130€ À DISTANCE</h3>
+<div style="background:#0a1a12;border:1px solid #00ff88;border-radius:12px;padding:12px;font-size:11px;margin-bottom:10px">
+<b>Activation Apple CarPlay et AndroidAuto en plein écran Volkswagen Touareg</b><br><br>
+<b>Compatibilité</b> : Vous nous faîtes parvenir les détails de votre voiture ainsi que la version du logiciel afin de vérifier et ainsi confirmer la compatibilité.<br><br>
+<b>À distance :</b> Ordinateur portable Windows + Carte SD - Nous effectuons le codage via TeamViewer.<br><br>
+Full Screen 10 icônes - Suppression bandes noires
+</div>
+<table class="tbl">
+<tr><td>Modèles</td><td>Panamera 971 / Cayenne 9YA / Macan / Touareg CR / Bentayga</td></tr>
+<tr><td>Version</td><td>TOUTES POG11_EU_Pxxxx - ✅ À DISTANCE</td></tr>
+<tr><td>Active</td><td>Full Screen CarPlay 10 icônes + Android Auto Full</td></tr>
+<tr><td>Procédure</td><td>À DISTANCE PC+SD 40-45min</td></tr>
+</table>
+<a class="btn" href="https://wa.me/33666085584?text=Porsche_POG11_Touareg_130">📲 WHATSAPP PORSCHE 130€</a>
+</div>`;
+document.getElementById('modal').classList.add('open');
+}
+function openVW(){
+document.getElementById('box').innerHTML=`
+<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button>
+<div style="padding:16px">
+<h3 style="color:#00ff88">VW MST2_EU_VW_PxxxD 70€ À DISTANCE</h3>
+<div style="background:#08162f;border:2px solid #00a8ff;border-radius:12px;padding:12px;font-size:11px;margin:10px 0;text-align:center">
+L'activation à distance est disponible pour tous les modèles dont le micrologiciel débute par MST2_EU_VW_PxxxD ou MH2P_ER_AU_PXXX.
+</div>
+<table class="tbl"><tr><td>Modèles</td><td>Golf 7 / Tiguan 2 / Passat B8 / Polo 6 / T-Roc</td></tr><tr><td>Version</td><td>TOUTES MST2_EU_VW_PxxxD - ✅ À DISTANCE 15min</td></tr></table>
+<a class="btn" href="https://wa.me/33666085584?text=VW_PxxxD_70">📲 WHATSAPP VW 70€</a>
+</div>`;
+document.getElementById('modal').classList.add('open');
+}
+function openSkoda(){
+document.getElementById('box').innerHTML=`
+<button class="close" onclick="document.getElementById('modal').classList.remove('open')">X FERMER</button>
+<div style="padding:16px">
+<h3 style="color:#ffa500">SEAT SKODA xxxT + MHI2/MHI2Q 70€ SUR PLACE</h3>
+<div style="background:#1a0a0a;border:2px solid #ff1a1a;border-radius:12px;padding:12px;font-size:11px;margin:10px 0;text-align:center">
+Pour les autres versions (MST2_EU_SE/SK_ZR_PxxxT / MHI2 / MHI2Q), une intervention sur place à Montpellier est nécessaire, pour une durée de 30 à 45 minutes.
+</div>
+<table class="tbl"><tr><td>Modèles</td><td>Scala Kamiq Karoq Ibiza Leon + A3 A4 A5 Q2 Q5 Q7</td></tr><tr><td>Version</td><td>PxxxT + MHI2/MHI2Q - ❌ SUR PLACE</td></tr><tr><td>Temps</td><td>30-45min Montpellier 34000</td></tr></table>
+<a class="btn" href="https://wa.me/33666085584?text=Sur_place_70">📲 WHATSAPP SUR PLACE 70€</a>
+</div>`;
+document.getElementById('modal').classList.add('open');
+}
+function closeModal(e){ if(!e || e.target.id==='modal') document.getElementById('modal').classList.remove('open'); }
+</script>
+</body>
+</html>
